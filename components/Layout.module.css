@@ -1,0 +1,82 @@
+.topBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.topBarContent {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0;
+  box-sizing: border-box;
+}
+
+.siteName {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.topNav {
+  display: flex;
+  gap: 10px;
+}
+
+.topButton {
+  background-color: #0070f3;
+  color: #fff;
+  padding: 6px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: background-color 0.2s ease;
+}
+
+.topButton:hover {
+  background-color: #005bb5;
+}
+
+.main {
+  position: fixed;
+  top: 8vh;
+  bottom: 5vh;
+  left: 10%;
+  width: 80%;
+  overflow-y: auto;
+  background: #f9f9f9;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  z-index: 99;
+}
+
+.contentWindow {
+  padding: 10px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5vh;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

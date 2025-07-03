@@ -1,0 +1,60 @@
+.btnGroup {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.btnPrimary {
+  display: inline-block;
+  background-color: #0070f3;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btnPrimary:hover,
+.btnPrimary:focus {
+  background-color: #005bb5;
+  outline: none;
+}
+
+
+.btnSmall {
+  display: inline-block;
+  background-color: #0070f3;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btnSmall:hover,
+.btnSmall:focus {
+  background-color: #005bb5;
+  outline: none;
+}
+
+.exerciseTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.exerciseTable th,
+.exerciseTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.exerciseTable th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}

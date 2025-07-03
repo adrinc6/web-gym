@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
+import Layout from '../components/Layout';
 
 export default function Ejercicios() {
   return (
@@ -19,29 +20,7 @@ export default function Ejercicios() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <header>
-        <nav className={styles.navbar}>
-          <h1>
-            <Link href="/">
-              <a title="Volver a inicio">Entrena en Casa</a>
-            </Link>
-          </h1>
-          <ul className={styles.navLinks}>
-            <li>
-              <Link href="/rutinas">
-                <a>Rutinas</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/ejercicios" aria-current="page">
-                <a>Ejercicios</a>
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <main>
+      <Layout>
         <article>
           <header>
             <h2>Ejercicios para Entrenar en Casa</h2>
@@ -58,10 +37,8 @@ export default function Ejercicios() {
                 Ejercicios que trabajan el pecho, hombros y tríceps, esenciales para desarrollar fuerza
                 y resistencia en la parte superior del cuerpo.
               </p>
-              <Link href="/ejercicios/empujes">
-                <a className={styles.btnSmall} aria-label="Ver ejercicios de empujes">
+              <Link href="/ejercicios/empujes" aria-label="Ver ejercicios de empujes" className={styles.btnSmall}>
                   Ver ejercicios de empujes
-                </a>
               </Link>
             </article>
 
@@ -71,10 +48,8 @@ export default function Ejercicios() {
                 Ejercicios que fortalecen la espalda, bíceps y antebrazos, fundamentales para mejorar la
                 postura y la capacidad de tirar cargas.
               </p>
-              <Link href="/ejercicios/traccion">
-                <a className={styles.btnSmall} aria-label="Ver ejercicios de tracción">
+              <Link href="/ejercicios/traccion" aria-label="Ver ejercicios de tracción" className={styles.btnSmall}>
                   Ver ejercicios de tracción
-                </a>
               </Link>
             </article>
 
@@ -84,27 +59,19 @@ export default function Ejercicios() {
                 Ejercicios dedicados a tonificar y fortalecer piernas, glúteos y core, clave para la estabilidad
                 y el equilibrio general.
               </p>
-              <Link href="/ejercicios/piernas">
-                <a className={styles.btnSmall} aria-label="Ver ejercicios de piernas">
+              <Link href="/ejercicios/piernas" aria-label="Ver ejercicios de piernas" className={styles.btnSmall}>
                   Ver ejercicios de piernas
-                </a>
               </Link>
             </article>
           </section>
 
           <footer>
-            <Link href="/">
-              <a className={styles.btnSmall} role="button" aria-label="Volver a la página principal">
+            <Link href="/" role="button" aria-label="Volver a la página principal" className={styles.btnSmall}>
                 ← Volver a Inicio
-              </a>
             </Link>
           </footer>
         </article>
-      </main>
-
-      <footer className={styles.footer}>
-        <p>© 2025 Entrena en Casa - Creado por Adrián</p>
-      </footer>
+      </Layout>
     </>
   );
 }
